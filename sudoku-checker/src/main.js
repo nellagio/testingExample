@@ -3,7 +3,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-// import { Rows } from './rows.js';
+// import { Row } from './rows.js';
 
 // User-Logic
 
