@@ -14,6 +14,13 @@ describe('Rows', () => {
     expect(rows.row7).toEqual(8);
     expect(rows.row8).toEqual(9);
   });
+
+  test('should have a sum of 45', () => {
+    var rows = new Rows([1,2,3,4,5,6,7,8,9], [], [], [], [], [], [], [], []);
+    expect(rows.row0).toEqual(45);
+  });
+
+
   // test('should correctly determine whether three lengths are not a triangle', () => {
   //   var notTriangle = new Triangle(3,9,22);
   //   expect(notTriangle.checkType()).toEqual("not a triangle");
