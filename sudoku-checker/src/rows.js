@@ -17,3 +17,8 @@ Row.prototype.rowCheck = function() {
   var total = this.row0 + this.row1 + this.row2 + this.row3 + this.row4 + this.row5 + this.row6 + this.row7 + this.row8;
   return total;
 }
+
+Row.prototype.checkDoubles = function() {
+  var alicia = Object.values(Row);
+  alicia.reduce(function(a, b){ return (a === b) ? a : NaN; });
+}

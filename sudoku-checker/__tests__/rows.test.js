@@ -19,4 +19,9 @@ describe('Row', () => {
     var row = new Row(1,2,3,4,5,6,7,8,9);
     expect(row.rowCheck()).toEqual(45);
   });
+
+  test('numbers should not be equal', () => {
+    var row = new Row(1,2,3,4,5,6,7,8,9);
+    expect(row.checkDoubles()).toEqual("false");
+  });
 });
